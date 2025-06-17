@@ -11,6 +11,7 @@ Saves the matched bucket names to bucketnames.txt.
 🧰 Prerequisites
 AWS CLI installed and configured (aws configure)
 Create an IAM roles with permission to list S3 buckets, if using Ec2 then attach the roles to the Ec2 instance
+Required permissions:- 1) AmazonS3FullAccess 2)AmazonEc2FullAcess
 How to attach IAM Roles to Ec2 :- https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/attach-iam-role.html
 Unix/Linux shell with bash, awk, and grep available
 
