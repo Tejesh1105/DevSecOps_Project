@@ -11,7 +11,7 @@ if [ $# -gt 0 ]; then
                 echo "Congratulation $USER username has been created "
                 sudo useradd -m $USER --shell /bin/bash
                 SPEC=$(echo ' !@#$%^&*() ' | fold -w1 | shuf | head -1)
-                PASSWORD="IndianArmy@${RANDOM}${SPEC}"
+                PASSWORD="Company_Name@${RANDOM}${SPEC}"
                 echo "$USER:$PASSWORD" | sudo chpasswd
                 echo "The temporary password for the $USER is ${PASSWORD}"
                 passwd -e $USER
